@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLUX7 — Clothing in Constant Flux</title>
+<meta name="description" content="FLUX7 clothing store — new drops, essentials, and outerwear built to move with you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">FLUX<span>7</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#drops">New Drops</a>
+      <a href="#shop">Shop</a>
+      <a href="#story">Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="cartBtn" aria-label="View cart">
+        Cart <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="drops">
+  <div class="hero-inner">
+    <p class="eyebrow">FALL DROP / FLX-07</p>
+    <h1 class="hero-title">CLOTHING<br>IN CONSTANT<br><span class="outline">FLUX.</span></h1>
+    <p class="hero-copy">FLUX7 makes wardrobe staples for people who don't sit still. Heavyweight cotton, honest prices, no filler. New drop live now.</p>
+    <div class="hero-actions">
+      <a href="#shop" class="btn btn-primary">Shop the drop</a>
+      <a href="#story" class="btn btn-ghost">Our story</a>
+    </div>
+  </div>
+
+  <div class="hero-tag" aria-hidden="true">
+    <svg viewBox="0 0 220 300" class="tag-svg">
+      <line x1="110" y1="0" x2="110" y2="34" class="tag-string" />
+      <g class="tag-shape">
+        <path d="M20 40 H160 L200 90 V270 A10 10 0 0 1 190 280 H30 A10 10 0 0 1 20 270 V40 Z" />
+        <circle cx="110" cy="34" r="9" class="tag-hole" />
+      </g>
+      <text x="110" y="130" class="tag-text tag-brand">FLUX7</text>
+      <line x1="45" y1="150" x2="175" y2="150" class="tag-dash" />
+      <text x="110" y="180" class="tag-text tag-mono">STYLE FLX-07</text>
+      <text x="110" y="202" class="tag-text tag-mono">100% COTTON</text>
+      <text x="110" y="224" class="tag-text tag-mono">MADE IN FLUX</text>
+      <line x1="45" y1="244" x2="175" y2="244" class="tag-dash" />
+      <text x="110" y="266" class="tag-text tag-price">$68</text>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ CATEGORY STRIP ============ -->
+<nav class="category-strip" aria-label="Shop by category">
+  <button class="cat-pill active" data-filter="all">All</button>
+  <button class="cat-pill" data-filter="outerwear">Outerwear</button>
+  <button class="cat-pill" data-filter="essentials">Essentials</button>
+  <button class="cat-pill" data-filter="bottoms">Bottoms</button>
+  <button class="cat-pill" data-filter="accessories">Accessories</button>
+</nav>
+
+<!-- ============ PRODUCT GRID ============ -->
+<section class="shop" id="shop">
+  <div class="section-head">
+    <h2>THE LINE-UP</h2>
+    <p>Eight pieces. Every tag tells you exactly what you're getting.</p>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+
+    <article class="product-card swatch-1" data-category="outerwear">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Field Jacket</h3>
+        <p class="mono">FLX-01 · WAXED COTTON</p>
+        <div class="card-foot">
+          <span class="price">$142</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-2" data-category="essentials">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Heavyweight Tee</h3>
+        <p class="mono">FLX-02 · 100% COTTON</p>
+        <div class="card-foot">
+          <span class="price">$38</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-3" data-category="bottoms">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Cargo Trouser</h3>
+        <p class="mono">FLX-03 · COTTON TWILL</p>
+        <div class="card-foot">
+          <span class="price">$96</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-4" data-category="outerwear">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Shearling Overshirt</h3>
+        <p class="mono">FLX-04 · WOOL BLEND</p>
+        <div class="card-foot">
+          <span class="price">$168</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-5" data-category="essentials">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Crewneck Sweat</h3>
+        <p class="mono">FLX-05 · FLEECE COTTON</p>
+        <div class="card-foot">
+          <span class="price">$64</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-6" data-category="bottoms">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Straight Denim</h3>
+        <p class="mono">FLX-06 · RIGID DENIM</p>
+        <div class="card-foot">
+          <span class="price">$88</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-7" data-category="accessories">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Canvas Tote</h3>
+        <p class="mono">FLX-07 · CANVAS</p>
+        <div class="card-foot">
+          <span class="price">$32</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="product-card swatch-8" data-category="accessories">
+      <div class="card-visual"><span class="punch"></span></div>
+      <div class="card-body">
+        <h3>Flux Cap</h3>
+        <p class="mono">FLX-08 · TWILL</p>
+        <div class="card-foot">
+          <span class="price">$28</span>
+          <button class="btn btn-small add-to-cart">Add to cart</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story" id="story">
+  <div class="story-visual" aria-hidden="true"></div>
+  <div class="story-copy">
+    <p class="eyebrow">ABOUT FLUX7</p>
+    <h2>NOTHING STAYS STILL.<br>NEITHER DO WE.</h2>
+    <p>FLUX7 started in a two-person workshop with one rule: make clothes for people who are always mid-motion. No seasonal gimmicks, no filler pieces — just heavyweight fabrics, honest construction, and a tag that tells you the truth about what's in your hands.</p>
+    <p>Every FLX style is numbered, tracked, and made in small batches. When it's gone, the number retires.</p>
+    <a href="#contact" class="btn btn-primary">Get in touch</a>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter" id="contact">
+  <h2>JOIN THE FLUX LIST</h2>
+  <p>Drop alerts, restocks, and nothing else. Unsubscribe any time.</p>
+  <form class="newsletter-form" id="newsletterForm">
+    <input type="email" id="newsletterEmail" placeholder="you@email.com" required aria-label="Email address">
+    <button type="submit" class="btn btn-primary">Sign up</button>
+  </form>
+  <p class="form-note" id="formNote" role="status"></p>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="logo">FLUX<span>7</span></a>
+      <p>Clothing in constant flux.<br>Addis Ababa · Worldwide shipping</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="#shop">New Drops</a>
+      <a href="#shop">Essentials</a>
+      <a href="#shop">Outerwear</a>
+      <a href="#shop">Accessories</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Size guide</a>
+      <a href="#contact">Contact us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Twitter / X</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> FLUX7. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
